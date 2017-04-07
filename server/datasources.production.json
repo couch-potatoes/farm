@@ -1,0 +1,5 @@
+{
+  "mysql-db": {
+    "url": "${DATABASE_URL}"
+  }
+}
