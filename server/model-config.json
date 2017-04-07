@@ -38,5 +38,9 @@
   "ParticipantProfile": {
     "dataSource": "mysql-db",
     "public": false
+  },
+  "Participant": {
+    "dataSource": "mysql-db",
+    "public": true
   }
 }
