@@ -2,5 +2,15 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "mysql-db": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "farm-db",
+    "password": "local",
+    "name": "mysql-db",
+    "user": "local",
+    "connector": "mysql"
   }
 }
