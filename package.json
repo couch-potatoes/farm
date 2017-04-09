@@ -5,6 +5,7 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
+    "debug-start": "DEBUG=loopback:security:* node .",
     "posttest": "npm run lint && nsp check"
   },
   "dependencies": {
