@@ -42,5 +42,9 @@
   "Participant": {
     "dataSource": "mysql-db",
     "public": true
+  },
+  "Researcher": {
+    "dataSource": "mysql-db",
+    "public": true
   }
 }
