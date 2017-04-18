@@ -31,48 +31,47 @@
       "required": true,
       "default": 0
     },
-    "ExerciseLength":
-    {
+    "exerciseLength": {
       "type": "number",
       "required": true,
       "default": 0
     },
-    "EatBefore": {
+    "eatBefore": {
       "type": "boolean",
       "required": true,
       "default":false
     },
-    "EatAfter": {
+    "eatAfter": {
       "type": "boolean",
       "required": true,
       "default":false
     },
-    "SleepQuality": {
+    "sleepQuality": {
       "type": "number",
       "required": true,
       "default": 0
     },
-    "StressLevel": {
+    "stressLevel": {
       "type": "number",
       "required": true,
       "default": 0
     },
-    "EnergyLevel": {
+    "energyLevel": {
       "type": "number",
       "required": true,
       "default": 0
     },
-    "NumMeals": {
+    "numMeals": {
       "type": "number",
       "required": true,
       "default": 0
     },
-    "Breakfast": {
+    "breakfast": {
       "type": "boolean",
       "required": true,
       "default":false
     },
-    "SleepLength": {
+    "sleepLength": {
       "type": "number",
       "required": true,
       "default": 0
