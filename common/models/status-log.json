@@ -21,12 +21,7 @@
     }
   },
   "acls": [
-    {
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "$owner",
-      "permission": "ALLOW"
-    }
+    {}
   ],
   "methods": {}
 }
