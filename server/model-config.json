@@ -50,5 +50,9 @@
   "StatusEntry": {
     "dataSource": "mysql-db",
     "public": true
+  },
+  "StatusLog": {
+    "dataSource": "mysql-db",
+    "public": true
   }
 }

@@ -1,11 +1,16 @@
 {
   "name": "StatusEntry",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
+    "entryDate": {
+      "type": "date",
+      "id": true,
+      "required": true
+    },
     "calories": {
       "type": "number",
       "required": true,
