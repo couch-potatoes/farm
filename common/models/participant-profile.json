@@ -1,11 +1,16 @@
 {
   "name": "ParticipantProfile",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
+    "participantId": {
+      "type": "number",
+      "required": true,
+      "id": true
+    },
     "height": {
       "type": "number",
       "required": true
