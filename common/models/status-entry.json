@@ -30,6 +30,52 @@
       "type": "number",
       "required": true,
       "default": 0
+    },
+    "ExerciseLength":
+    {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "EatBefore": {
+      "type": "boolean",
+      "required": true,
+      "default":false
+    },
+    "EatAfter": {
+      "type": "boolean",
+      "required": true,
+      "default":false
+    },
+    "SleepQuality": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "StressLevel": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "EnergyLevel": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "NumMeals": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "Breakfast": {
+      "type": "boolean",
+      "required": true,
+      "default":false
+    },
+    "SleepLength": {
+      "type": "number",
+      "required": true,
+      "default": 0
     }
   },
   "validations": [],
