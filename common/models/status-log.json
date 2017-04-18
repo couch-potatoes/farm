@@ -17,9 +17,16 @@
     "statusEntries": {
       "type": "hasMany",
       "model": "StatusEntry",
-      "foreignKey": ""
+      "foreignKey": "participantId"
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }

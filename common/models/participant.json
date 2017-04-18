@@ -16,7 +16,7 @@
     "statusLog": {
       "type": "hasOne",
       "model": "StatusLog",
-      "foreignKey": ""
+      "foreignKey": "participantId"
     }
   },
   "acls": [
