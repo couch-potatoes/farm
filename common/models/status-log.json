@@ -20,8 +20,6 @@
       "foreignKey": "participantId"
     }
   },
-  "acls": [
-    {}
-  ],
+  "acls": [],
   "methods": {}
 }
