@@ -1,0 +1,89 @@
+{
+  "name": "StatusEntry",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "entryDate": {
+      "type": "date",
+      "id": true,
+      "required": true
+    },
+    "participantId": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "calories": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "carbs": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "proteins": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "fats": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "exerciseLength": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "eatBefore": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "eatAfter": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "sleepQuality": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "stressLevel": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "energyLevel": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "numMeals": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "breakfast": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "sleepLength": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

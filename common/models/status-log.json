@@ -1,0 +1,25 @@
+{
+  "name": "StatusLog",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "participantId": {
+      "type": "number",
+      "id": true,
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "statusEntries": {
+      "type": "hasMany",
+      "model": "StatusEntry",
+      "foreignKey": "participantId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

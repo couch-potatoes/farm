@@ -12,6 +12,11 @@
       "type": "hasOne",
       "model": "ParticipantProfile",
       "foreignKey": ""
+    },
+    "statusLog": {
+      "type": "hasOne",
+      "model": "StatusLog",
+      "foreignKey": "participantId"
     }
   },
   "acls": [
@@ -35,6 +40,34 @@
       "principalId": "$owner",
       "permission": "ALLOW",
       "property": "__update__participantProfile"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": "exists"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": "__get__statusLog"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": "__create__statusLog"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": "__update__statusLog"
     },
     {
       "accessType": "READ",
