@@ -46,5 +46,9 @@
   "Researcher": {
     "dataSource": "mysql-db",
     "public": true
+  },
+  "StatusEntries": {
+    "dataSource": "mysql-db",
+    "public": true
   }
 }
