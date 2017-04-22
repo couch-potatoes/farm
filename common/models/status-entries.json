@@ -1,19 +1,19 @@
 {
   "name": "StatusEntries",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
     "date": {
       "type": "date",
-      "id": true,
+      "id": 1,
       "required": true
     },
     "participantId": {
       "type": "number",
-      "id": true,
+      "id": 2,
       "required": true
     },
     "calories": {
