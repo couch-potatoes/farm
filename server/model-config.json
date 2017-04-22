@@ -49,6 +49,6 @@
   },
   "StatusEntries": {
     "dataSource": "mysql-db",
-    "public": true
+    "public": false
   }
 }
