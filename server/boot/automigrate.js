@@ -8,10 +8,11 @@ module.exports = function(app, cb) {
    * http://docs.strongloop.com/display/public/LB/Working+with+LoopBack+objects
    * for more info.
   */
-  if (process.env.NODE_ENV !== 'production') {
+  if (process.env.NODE_ENV === 'production') {
     process.nextTick(cb);
     return;
   }
+  // process.nextTick(cb);
   var dataSource = app.dataSources['mysql-db'];
   /*
   * We can pass an array of strings of models to automigrate.
@@ -19,7 +20,7 @@ module.exports = function(app, cb) {
   * should be done only for models that don't have a table.
   */
   var tablesToMigrate = [
-    'statusentries',
+    'StatusEntries',
   ];
   dataSource.automigrate(tablesToMigrate, function(err) {
     if (err) return cb(err);
