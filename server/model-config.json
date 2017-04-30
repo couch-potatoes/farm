@@ -50,5 +50,8 @@
   "StatusEntries": {
     "dataSource": "mysql-db",
     "public": false
-  }
+  },
+  "Email": {
+   "dataSource": "emailDs"
+ }
 }

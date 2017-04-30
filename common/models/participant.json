@@ -82,6 +82,13 @@
       "principalId": "$owner",
       "permission": "ALLOW",
       "property": "exists"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "resetPassword"
     }
   ],
   "methods": {}
