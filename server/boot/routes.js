@@ -32,7 +32,7 @@ module.exports = function(app) {
         res.render('response', {
           title: 'Login failed',
           content: err,
-          redirectTo: '/',
+          redirectTo: 'http://potatoes.pro',
           redirectToLinkText: 'Try again'
         });
         return;
@@ -64,7 +64,7 @@ module.exports = function(app) {
       res.render('response', {
         title: 'Password reset requested',
         content: 'Check your email for further instructions',
-        redirectTo: '/',
+        redirectTo: 'http://potatoes.pro',
         redirectToLinkText: 'Log in'
       });
     });
@@ -100,7 +100,7 @@ module.exports = function(app) {
         res.render('response', {
           title: 'Password reset success',
           content: 'Your password has been reset successfully',
-          redirectTo: 'potatoes.pro',
+          redirectTo: 'http://potatoes.pro',
           redirectToLinkText: 'Log in'
         });
       });

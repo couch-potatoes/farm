@@ -47,7 +47,7 @@ module.exports = function(User) {
 
   //send password reset link when requested
   User.on('resetPasswordRequest', function(info) {
-    var url = 'http://localhost:' + config.port + '/reset-password';
+    var url = 'https://couch-potatoes-farm-test.herokuapp.com'+ '/reset-password';
     var html = 'Click <a href="' + url + '?access_token=' +
         info.accessToken.id + '">here</a> to reset your password';
 
