@@ -1,6 +1,6 @@
 {
   "restApiRoot": "/api",
-  "host": "https://couch-potatoes-farm-test.herokuapp.com",
+  "host": "couch-potatoes-farm-test.herokuapp.com",
   "port": 3000,
   "remoting": {
     "context": false,
