@@ -13,52 +13,20 @@ var config = require('../../server/config.json');
 var path = require('path');
 
 module.exports = function(User) {
-  //send verification email after registration
-  User.afterRemote('create', function(context, user, next) {
-    console.log('> user.afterRemote triggered');
-
-    var options = {
-      type: 'email',
-      to: user.email,
-      from: 'noreply@loopback.com',
-      subject: 'Thanks for registering.',
-      template: path.resolve(__dirname, '../../server/views/verify.ejs'),
-      redirect: '/verified',
-      user: user
-    };
-
-    user.verify(options, function(err, response) {
-      if (err) {
-        User.deleteById(user.id);
-        return next(err);
-      }
-
-      console.log('> verification email sent:', response);
-
-      context.res.render('response', {
-        title: 'Signed up successfully',
-        content: 'Please check your email and click on the verification link ' +
-            'before logging in.',
-        redirectTo: '/',
-        redirectToLinkText: 'Log in'
-      });
-    });
-  });
-
   //send password reset link when requested
-  User.on('resetPasswordRequest', function(info) {
-    var url = 'https://couch-potatoes-farm-test.herokuapp.com'+ '/reset-password';
-    var html = 'Click <a href="' + url + '?access_token=' +
-        info.accessToken.id + '">here</a> to reset your password';
-
-    User.app.models.Email.send({
-      to: info.email,
-      from: info.email,
-      subject: 'Password reset',
-      html: html
-    }, function(err) {
-      if (err) return console.log('> error sending password reset email');
-      console.log('> sending password reset email to:', info.email);
-    });
+  User.on('resetPasswordRequest', function(info)
+  {
+      console.log(info.accessToken.id);
+      console.log(info);
+      User.findById(info.accessToken.userId, function(err, user)
+      {
+        console.log('password:'+info.options.password);
+          if (err) return res.sendStatus(404);
+          user.updateAttribute('password', info.options.password, function(err, user)
+          {
+            if (err) return res.sendStatus(404);
+            console.log('> password reset processed successfully');
+          });
+      });
   });
 };
